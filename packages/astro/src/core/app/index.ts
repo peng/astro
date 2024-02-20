@@ -140,6 +140,7 @@ export class App {
 						return bundlePath;
 					}
 					default: {
+						// lose assetsPrefix
 						return createAssetLink(bundlePath, this.#manifest.base, this.#manifest.assetsPrefix);
 					}
 				}
